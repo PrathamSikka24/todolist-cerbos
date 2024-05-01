@@ -1,0 +1,14 @@
+apiVersion: api.cerbos.dev/v1
+resourcePolicy:
+  version: "default"
+  resource: "todos"
+  rules:
+    - actions: ["view:all", "view:single", "create", "update", "flag"]
+      effect: EFFECT_ALLOW
+      roles:
+        - user
+        - admin
+    - actions: ["delete"]
+      effect: EFFECT_ALLOW
+      roles:
+        - admin

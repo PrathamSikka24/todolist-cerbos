@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        margin: 8px 0;
+      }
+      .delete {
+        color: red;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <img src="cerbos-logo.png" alt="Cerbos Logo" id="cerbosLogo" />
+      <h1>Todo List</h1>
+    </div>
+    <select id="userNameDropdown">
+      <option value="Executive-1">Executive-1</option>
+      <option value="Executive-2">Executive-2</option>
+      <option value="Executive-3">Executive-3</option>
+      <option value="CTO">CTO</option>
+      <option value="CPO">CPO</option>
+    </select>
+    <input type="text" id="todoInput" placeholder="Add a new todo..." />
+    <button onclick="addTodo()">Add Todo</button>
+    <ul id="todoList"></ul>
+    <script src="app.js"></script>
+  </body>
+</html>
