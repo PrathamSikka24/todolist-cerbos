@@ -1,0 +1,11 @@
+principals:
+  user#1:
+    id: user#1
+    roles:
+      - user
+    attr: {}
+  admin#2:
+    id: admin#2
+    roles:
+      - admin
+    attr: {}
